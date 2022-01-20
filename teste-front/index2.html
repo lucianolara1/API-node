@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teste de front-end</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    <h1>Lista de alunos estático</h1>
+  <ul>
+    <ol>Nome: </ol>
+    <ol>Nome: </ol>
+    <ol>Nome: </ol>
+    <ol>Nome: </ol>
+  </ul>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script>
+    axios.get('http://localhost:3000/api/v1/alunos')
+      .then(response => console.log(response))
+      .catch(error => console.log(error))
+  </script>
+  
+</html>
